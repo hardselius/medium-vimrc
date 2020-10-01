@@ -19,6 +19,7 @@ set ruler
 set shiftround
 set tags=./tags;,tags;
 set wildcharm=<C-z>
+set wildmenu
 
 augroup mediumvimrc
   autocmd!
