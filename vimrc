@@ -67,10 +67,6 @@ nnoremap ]l :lnext<CR>
 nnoremap <Space><Space> :'{,'}s/\<<C-r>=expand("<cword>")<CR>\>/
 nnoremap <Space>%       :%s/\<<C-r>=expand("<cword>")<CR>\>/
 
-" completions
-inoremap <expr> <Tab> pumvisible() ? "\<C-n>" : "<Tab>"
-inoremap <expr> <S-Tab> pumvisible() ? "\<C-p>" : "<S-Tab>"
-
 " grepping
 command! -nargs=+ -complete=file_in_path -bar Grep cgetexpr system(&grepprg . ' <args>')
 
